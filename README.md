@@ -1,21 +1,60 @@
 # Flutter Demo Using BloC
 
+This is a simple Flutter project demonstrating the usage of BloC (Business Logic Component) architecture for state management. BloC architecture separates business logic from UI components, promoting a more structured and scalable approach to building Flutter applications.
+
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project locally, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Make sure you have Flutter installed. For installation instructions, refer to the [Flutter documentation](https://flutter.dev/docs/get-started/install).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
 
-- [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/cuongtruonglevan/flutter_demo.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd flutter_demo
+   ```
+
+3. Get the dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+### Running the App
+
+Use the following command to run the Flutter app on your connected device or simulator:
+
+```bash
+flutter run
+```
+
+This command launches the Flutter application in debug mode.
+
+## Architecture Overview
+
+### BloC Pattern
+
+This project uses the BloC pattern for state management:
+
+- **Bloc**: Manages the state of the application.
+- **Event**: Represents events that can change the state.
+- **State**: Represents the state of the application in response to events.
 
 ![Bloc](https://miro.medium.com/max/1400/1*MqYPYKdNBiID0mZ-zyE-mA.png)
+
+### Project Structure
+
+The project structure is organized as follows:
  
  - `lib\main.dart` - Project entry point
  - `lib\core\..` - Core classes like Exception handler
@@ -26,3 +65,14 @@ samples, guidance on mobile development, and a full API reference.
    `lib\screens\home\bloc\..` - Logic
  - `lib\shared\..` - Components that's used accross the app, included colors and styles
  - `assets\sample.json` - Sample data's stored here
+
+## Dependencies
+
+- `flutter_bloc`: Provides the core functionality to implement the BloC pattern.
+- `equatable`: Simplifies equality comparisons for Dart objects.
+
+## Acknowledgments
+
+- [Official Flutter Documentation](https://flutter.dev/docs)
+- [Bloc Library Documentation](https://bloclibrary.dev)
+- [Equatable Package Documentation](https://pub.dev/packages/equatable)
